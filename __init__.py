@@ -1,6 +1,6 @@
 bl_info = {
     "name": "LiDAR Converter",
-    "author": "RavenStryker",
+    "author": "RavenStryker (Jake Handlovic)",
     "version": (1, 0),
     "blender": (4, 2, 0),
     "location": "Sidebar > Wreckfest",
