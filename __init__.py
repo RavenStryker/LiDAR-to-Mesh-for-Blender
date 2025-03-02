@@ -4,7 +4,7 @@ bl_info = {
     "version": (1, 0),
     "blender": (4, 2, 0),
     "location": "Sidebar > Wreckfest",
-    "description": "Convert LiDAR (.laz) files into terrain meshes in Blender",
+    "description": "Convert LiDAR (.las/.laz) files into terrain meshes in Blender",
     "warning": "",
     "wiki_url": "",
     "tracker_url": "",
