@@ -2,10 +2,10 @@
 ## Installation
 This is a plugin that can be used to convert LiDAR points to a useable mesh in Blender.  
 To install simply download the code into a .zip as shown in the image below.  
-<img src="https://github.com/user-attachments/assets/6a25252d-6d81-4f76-8ab4-ab4583cc5a93" width="402">
+![image](https://github.com/user-attachments/assets/6a25252d-6d81-4f76-8ab4-ab4583cc5a93)
 <br><br>
 Next in Blender go up to Edit and select Preferences... from the drop-down menu.  
-<img src="https://github.com/user-attachments/assets/fe39069f-2054-4cc0-94b3-c67e86e5de13" width="267">
+![image](https://github.com/user-attachments/assets/fe39069f-2054-4cc0-94b3-c67e86e5de13)
 <br><br>
 Click on the small arrow in the top right corner and select Install from Disk...  
 ![image](https://github.com/user-attachments/assets/6e903b79-c9d3-4820-999c-b61889dfef5b)
@@ -33,3 +33,4 @@ Below is a description of what the UI elements do when you expand the tool in th
 **Convert LiDAR to Mesh**: Starts the conversion process. Note that Blender may hang depending on how large your LiDAR file is and how much detail you're trying to get out of it. Just let it run and if you have too much detail, it will error out.  
 
 ## Video Tutorial
+### [Watch this video on YouTube](https://youtu.be/oP_3GyxefU0)
