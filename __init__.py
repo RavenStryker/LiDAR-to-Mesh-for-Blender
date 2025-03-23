@@ -1,7 +1,7 @@
 bl_info = {
     "name": "LiDAR Converter",
     "author": "RavenStryker (Jake Handlovic)",
-    "version": (1, 0),
+    "version": (1, 1),
     "blender": (4, 2, 0),
     "location": "Sidebar > Wreckfest",
     "description": "Convert LiDAR (.las/.laz) files into terrain meshes in Blender",
