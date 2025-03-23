@@ -20,7 +20,7 @@ import sys
 BLENDER_PYTHON = sys.executable
 
 # List of required dependencies
-REQUIRED_PACKAGES = ["laspy", "numpy", "open3d"]
+REQUIRED_PACKAGES = ["laspy[lazrs]", "numpy", "open3d"]
 
 def ensure_dependencies():
     """Check and install missing dependencies in Blender's Python environment."""

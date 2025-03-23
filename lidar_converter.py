@@ -7,7 +7,7 @@ from bpy.props import StringProperty, IntProperty, FloatProperty
 from bpy_extras.io_utils import ImportHelper
 
 class LIDAR_OT_ImportFile(bpy.types.Operator, ImportHelper):
-    """Select a LiDAR .laz file"""
+    """Select a LiDAR .las or .laz file"""
     bl_idname = "lidar.import_file"
     bl_label = "Select LiDAR File"
     bl_options = {'REGISTER', 'UNDO'}
@@ -32,7 +32,7 @@ class LIDAR_OT_SetSaveDirectory(bpy.types.Operator, ImportHelper):
         return {'FINISHED'}
 
 class LIDAR_OT_Convert(bpy.types.Operator):
-    """Convert LiDAR .laz to Blender Mesh"""
+    """Convert LiDAR .las or .laz to Blender Mesh"""
     bl_idname = "lidar.convert"
     bl_label = "Convert LiDAR to Mesh"
     bl_options = {'REGISTER', 'UNDO'}
@@ -47,7 +47,7 @@ class LIDAR_OT_Convert(bpy.types.Operator):
 
         # ===== ENSURE A .LAS/.LAZ FILE IS SELECTED =====
         if not laz_file_path:
-            self.report({'ERROR'}, "No .laz file selected.")
+            self.report({'ERROR'}, "No .las or .laz file selected.")
             return {'CANCELLED'}
 
         # ===== ENSURE SAVE DIRECTORY IS SELECTED =====
@@ -133,7 +133,7 @@ class LIDAR_PT_Panel(bpy.types.Panel):
     def draw(self, context):
         layout = self.layout
         scene = context.scene
-        layout.use_property_split = False  
+        layout.use_property_split = False
         layout.use_property_decorate = False
 
         # ===== LIDAR FILE SELECTION =====
